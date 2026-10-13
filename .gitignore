@@ -1,0 +1,17 @@
+# .gitignore
+
+# Python
+__pycache__/
+*.pyc
+venv/
+env/
+.pytest_cache/
+
+# Data
+data/*.sqlite3
+data/*_raw.txt
+*/ __pycache__/
+
+# OS generated files
+.DS_Store
+Thumbs.db
