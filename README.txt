@@ -20,11 +20,12 @@ Hay otra carpeta que se llama Code, donde debe incluirse toda la codificación n
 El resultado debe ser un plan que debe escibirse en un fichero Plan.md, y una carpeta de agentes con sus skills, para realizar las siguientes fases del desarrollo:
 
 - Lectura de las reglas generales de Warhammer 40k a partir del documento pdf, para inferir el modelo de datos y los algoritmos de cálculo del daño
-- Generación del modelo de datos
-- Generación de datos de prueba para poder hacer una prueba automática
+- Lectura de los ficheros de ejército del repositorio de NewRecruit, para inferir el modelo de datos y los algoritmos de cálculo del daño
 - Generación un integrador de datos que permita actualizar y leer los datos
 - Generación de las clases de ejecución de los algoritmos de generación de listas y cálculo de daño entre armas de unidades entre listas
 - Generación de una web que permita importar listas de ejército desde NewRecruit, y realizar las comparativas de cálculo de daño
 - Generación de herramientas de ingesta de datos cada vez que se actualicen listas de NewRecruit y pdfs de reglas y aclaraciones
 
 Crear estos agentes para cada una de las tareas del plan, es también ámbito de este proyecto.
+
+No es necesario ejecutar los agentes, tan solo crear la estructura
