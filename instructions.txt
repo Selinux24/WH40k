@@ -1,0 +1,30 @@
+Actúa como un experto en creación de proyectos IA, al que le han encargado un esqueleto de configuración, para generar una solución con el siguiente objetivo:
+
+Crear un proyecto capaz de analizar las reglas de Warhammer 40k, que permita analizar los diferentes documentos de reglas del juego:
+- El reglamento
+- Los diferentes libros de ejército
+- Las revisiones de valores de puntos
+- Las preguntas y respuestas
+
+El objetivo del análisis es tener una lista de resultados que liste, unidad por unidad de una lista de ejército, con todas las configuraciones de armamento posibles para la lista, aplicando sus habilidades y estratagemas, qué cantidad estimada de daño pueden llegar a generar contra las unidades de otro codex, aplicando también configuraciones de equipo y estratagemas
+La documentación deberá aportarse de golpe, y ser actualizada periódicamente con las revisiones que se realizan al juego.
+
+Se prevé un contexto grande, y los documentos se aportarán junto con sus actualizaciones periódicamente. Se necesita una estrategia para que el análisis tenga en cuenta toda la documentación, sin agotar el contexto.
+Las listas de ejército se pueden descargar en formato json desde https://github.com/BSData/wh40k-11e, el repositorio libre de la aplicación NewRecruit
+Los documentos en formato pdf o txt, estarán clasificados en subcarpetas por categoría, dentro de la carpeta docs.
+
+Se ha creado una carpeta para contener el proyecto: C:\Users\Usuario\source\repos\Selinux24\WH40k
+Dentro se ha creado la carpeta Docs/Rules con el reglamento en formato pdf
+Hay otra carpeta que se llama Code, donde debe incluirse toda la codificación necesaria del proyecto
+
+El resultado debe ser un plan que debe escibirse en un fichero Plan.md, y una carpeta de agentes con sus skills, para realizar las siguientes fases del desarrollo:
+
+- Lectura de las reglas generales de Warhammer 40k a partir del documento pdf, para inferir el modelo de datos y los algoritmos de cálculo del daño
+- Generación del modelo de datos
+- Generación de datos de prueba para poder hacer una prueba automática
+- Generación un integrador de datos que permita actualizar y leer los datos
+- Generación de las clases de ejecución de los algoritmos de generación de listas y cálculo de daño entre armas de unidades entre listas
+- Generación de una web que permita importar listas de ejército desde NewRecruit, y realizar las comparativas de cálculo de daño
+- Generación de herramientas de ingesta de datos cada vez que se actualicen listas de NewRecruit y pdfs de reglas y aclaraciones
+
+Crear estos agentes para cada una de las tareas del plan, es también ámbito de este proyecto.

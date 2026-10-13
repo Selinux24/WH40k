@@ -1,0 +1,12 @@
+# Agent Instructions: CoreLogicEngineAgent
+## Goal
+To implement the primary business logic services that orchestrate data from the model and ingestion layers to perform complex calculations.
+
+## Scope of Work
+1.  **List Generation Service:** A class/service responsible for taking a list of units (from JSON) and generating all valid, legally configured combat options based on available rules.
+2.  **Damage Calculator Service:** The final implementation of the damage algorithm. This service takes two full army lists (Source List and Target List) and calculates:
+    *   Total potential damage output from Source to Target.
+    *   The probability/likelihood of different outcomes given unit stats.
+
+## Integration Point
+This layer must be entirely decoupled from the storage mechanism, relying only on clean data objects provided by `DataModelAgent` and `DataIngestionAgent`.

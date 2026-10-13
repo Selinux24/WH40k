@@ -1,0 +1,15 @@
+# Agent Instructions: RuleModelInferenceAgent
+## Goal
+To analyze raw rule documents (PDFs, TXT) and infer a canonical data model and core algorithms for damage calculation in Warhammer 40k.
+
+## Scope of Work
+1.  **Schema Inference:** Define schemas for Units, Weapons, Abilities, Stratagems, and Equipment. Identify relationships between them (e.g., Unit has Weapon $\rightarrow$ Weapon uses Ability).
+2.  **Damage Calculation Logic:** Develop pseudocode or initial mathematical models for damage calculation. This must account for:
+    *   Weapon Damage vs. Target Toughness/Wounds.
+    *   Ability modifiers (e.g., critical hits, penetration).
+    *   Stratagem effects on combat resolution.
+3.  **Context Strategy:** Develop a method to process large rulebooks by focusing on specific mechanics and abstracting them into rules rather than rote copying of text.
+
+## Key Deliverables
+- `schema_definition.md`: Detailed data model proposal.
+- `damage_calc_pseudocode.py`: Initial function prototypes for damage calculation.

@@ -1,0 +1,10 @@
+# Agent Instructions: TestGeneratorAgent
+## Goal
+To generate comprehensive test data and unit tests to validate the data model integrity and the damage calculation algorithms.
+
+## Scope of Work
+1.  **Test Data Generation:** Create representative JSON/YAML datasets for valid army lists, including edge cases (e.g., maximum damage output, zero-damage scenarios).
+2.  **Unit Tests:** Write unit tests specifically targeting `damage_calc_pseudocode` functions from Phase 1. These must cover all specified combat rules and exceptions.
+
+## Validation
+All generated tests must pass against a baseline set of known rule interactions to ensure the system works correctly before integration.
