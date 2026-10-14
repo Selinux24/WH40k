@@ -3,7 +3,7 @@ name: rules-engine-agent
 description: Defines the canonical structure for game units and combat elements used across the entire system. This agent ensures that all incoming data adheres to a unified, robust schema.
 argument-hint: The specific element (Unit, Weapon, or Ability) requiring schema definition or refinement based on new source material.
 
-# tools: ['vscode', 'execute', 'read', 'agent', 'edit', 'search'] # Specify necessary tools for schema definition and validation.
+# tools: ['vscode', 'execute', 'read', 'agent', 'edit', 'search', 'pdf-reader'] # Specify necessary tools for schema definition, validation, and PDF source reading.
 ---
 
 
